@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1 Custom Object Records
+
+    a(href="/update-cobj") Add to this table
+
+    br
+    br
+
+    table(border="1")
+      thead
+        tr
+          th Name
+          th Species
+          th Description
+      tbody
+        each item in data
+          tr
+            td= item.properties.name
+            td= item.properties.species
+            td= item.properties.description

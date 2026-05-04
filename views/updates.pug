@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1 Add New Record
+
+    a(href="/") Return to homepage
+
+    br
+    br
+
+    form(action="/update-cobj" method="POST")
+      div
+        label Name:
+        input(type="text" name="name" required)
+
+      div
+        label Species:
+        input(type="text" name="species" required)
+
+      div
+        label Description:
+        textarea(name="description")
+
+      br
+      button(type="submit") Submit
